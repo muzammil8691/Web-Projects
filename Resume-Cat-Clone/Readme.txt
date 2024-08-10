@@ -24,3 +24,4 @@ This project was a pivotal learning experience, as it not only deepened my under
 
 LinkedIn Post Link:
 
+https://www.linkedin.com/posts/m-muzammil-23jun20_webdevelopment-css-javascript-activity-7227995832984190977-KMcd?utm_source=share&utm_medium=member_desktop
