@@ -1,0 +1,699 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body {
+    min-width: 100%;
+    height: 100%;
+}
+
+
+/* NavBar CSS */
+nav{
+    width: 100%;
+    height: 60px;
+    box-shadow: 0px 2px 3px lightgray;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+/* CSS of Left grid of NavBar */
+#nav_left{
+    width: 200px;
+    padding-top: 10px;
+    padding-left: 20px;
+    font-weight: 400px;
+    font-size: 16px;
+    font-family: ui-sans-serif;
+    display: flex;
+    
+}
+
+/* b is text "ResumeCat" in Html */
+b{
+    font-size: 26px;
+    padding-top: 8px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+/* i is icon of Font Awesome */
+i{
+    color: #805AD5;
+    /* background-color:yellowgreen; */
+    flex: 18%;
+    
+
+}
+i:hover{
+    display: none;
+}
+/* .r is Resume text & .c  is Cat text */
+.r{
+    color: #475d7c;
+    /* background-color: yellow; */
+    flex: 82%;
+    
+}
+.c{
+    color: #805AD5;
+}
+
+/* Hover CSS */
+.r:hover{     
+    cursor: pointer;
+    color: #1f324d;
+}
+.c:hover{ 
+    cursor: pointer;
+    color: #5f3ea7;
+    
+}
+i:hover{
+    cursor: pointer;
+    color: #5f3ea7;
+}
+
+
+/* CSS of Right grid of NavBar */
+
+#nav_right{
+
+    margin-left: 400px;
+
+}
+
+/* Combined CSS of Buttons present in nav right */
+
+#nav_right button{
+    width: 90px;
+    height: 40px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+/*   Seperate CSS of Both Buttons using ID's*/
+#loginbtn{
+    font-size: large;
+    color: darkslategray;
+    background-color: white;
+    border: 0px;
+}
+
+#loginbtn:hover{
+    cursor: pointer;
+    background-color: lightblue;
+}
+
+#signupbtn{
+    font-size: large;
+    color: white;
+    background-color: rgb(80, 80, 212);
+    border: 0px;
+    padding: 6px;
+}
+#signupbtn:hover{
+    cursor: pointer;
+    background-color: rgb(51, 51, 148);
+}
+
+
+                /*      ---------------CSS of Main Starts Here---------------   */
+
+
+/* CSS of div content1 */
+#content1{
+    width: 100%;
+    height: 500px;
+    /* background-color:bisque; */
+
+}
+/* CSS of p tag inside content */
+#c_ptag{
+    display: block;
+    text-align: center;
+    color: #4F46E5;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 550;
+    font-size: medium;
+    padding-top: 80px;
+}
+/* CSS of H2 inside div text1 */
+#text1{
+    width: 65%;
+    height: 140px;
+    margin: auto;
+    text-align: center;
+    font-size: 40px;
+    line-height: 60px;
+    margin-top: 10px;
+    font-weight: 700;
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+}
+
+#span1{
+    color: #4F46E5;
+}
+
+/* ---- */
+#text2{
+    display: block;
+    text-align: center;
+    color: darkslategrey;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight:lighter;
+    font-size: larger;
+
+}
+
+/* CSS of Create Resume Button */
+#btn_create{
+    width: 225px;
+    height: 60px;
+    font-size: large;
+    color: white;
+    font-weight: bold;
+    background-color: rgb(80, 80, 212);
+    border: 0px;
+    border-radius: 5px ;
+    padding: 3px;
+    margin-top: 40px;
+    margin-left: 550px;
+}
+#btn_create:hover{
+    cursor: pointer;
+    background-color: rgb(68, 68, 180);
+}
+
+#count{
+    text-align: center;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-top: 70px;
+
+}
+
+/* Animation of Blinking Dot */
+#count_dot{
+    background-color: aqua;
+    text-align: center;
+    margin-left: 550px;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    margin-top: 4px;
+
+    position: absolute;
+    animation-name: blink1;
+    animation-duration: 1.3s;
+    animation-iteration-count: infinite;
+
+}
+@keyframes blink1 {
+    from{
+        opacity: 100%;
+    }
+    to{
+        opacity: 0%;
+    }
+    
+}
+
+
+                   /*--------------- CSS of Companies Names & Logos ---------------*/
+
+/* Main Parent Div */
+.main_companies{
+
+    width: 100%;
+    height: 200px;
+    background-color: #F8FAFC;
+    text-align: center;
+}
+.main_companies h4{
+    padding-top: 30px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #475569;
+}
+/* 5 Companies Logos with Names Grid CSS */
+.companies{
+/* #94A3B8 */
+   
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    margin-top: 40px;
+}
+
+
+
+                        /* ---------------CSS of Dream Job Div--------------- */
+
+/* Parent Div */
+.dream_job{
+
+    width: 100%;
+    height: 500px;
+}
+
+/* p tag and h tag in parent */
+#dream_ptag{
+    padding-top: 50px;
+    text-align: center;
+    color: #4F46E5;
+    font-weight: 500;
+    font-size: medium;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.dream_job h1{
+    text-align: center;
+    font-size:xx-large;
+    padding-top: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+         /* CSS of Grid Inside Dream Job */
+
+/* Inside Dream Job I created Grid for 4 Contents & Inside it I created Flex Box   */
+
+
+
+
+/* Making a Grid for the Content Under Dream Job Div */
+
+.dream_content{
+    max-width: 100%;
+    height: 200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 30px;
+    margin: 50px;
+}
+
+/* CSS of H3 & P tag */
+.dream_content h3{
+
+    font-size: 18px;
+    font-family: ui-sans-serif, system-ui, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+.dream_content p{
+
+    font-size: 16px;
+    font-family: ui-sans-serif, system-ui, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+/* C1 C2 C3 C4 are Grids and inside Grids I created Flex Box to Seperate Icon and h3/p tags */
+
+.dream_c1{
+    padding: 10px;
+    display: flex;
+    flex-wrap: nowrap;
+
+
+}
+
+.dream_c2{
+    padding: 10px;
+    display: flex;
+    flex-wrap: nowrap;
+
+}
+.dream_c3{    
+    padding: 10px;
+    display: flex;
+    flex-wrap: nowrap;
+
+}
+.dream_c4{
+    padding: 10px;
+    display: flex;
+    flex-wrap: nowrap;
+  
+}
+
+/* Flex of icon and h3/p seperation */
+.dream_icons{
+    max-height: 40px;
+    text-align: center;
+    justify-content: center;
+    flex: 8%;
+    padding: auto;
+    padding-top: 5px;
+    border-radius: 10px;
+    background-color: #4F46E5;
+
+
+}
+.dream_hp{
+    flex: 92%;
+    justify-content: start;
+    padding-left: 10px;
+
+}
+
+
+            /*-------------- Every Great Career CSS Starts Here -------------- */
+
+
+/* Career Parent */
+.career{
+    width: 100%;
+    height: 700px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #F8FAFC;
+}
+
+/* Child Divs Grids */
+.career_left{
+    text-align: end;
+
+}
+.career_right{
+
+    padding-top: 90px;
+    padding-left: 50px;
+    padding-right: 130px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+/* first P tag  */
+.career_right .txt{
+    color: #4F46E5;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+/* H2 Tag */
+.career_right h2{
+    color: #0f172a;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 40px;
+
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+}
+/* span in H2 tag */
+.solid_resume{
+
+    color: #4F46E5;
+}
+
+/* Create resume button */
+.career_right button{
+
+    width: 180px;
+    height: 50px;
+    font-size: large;
+    color: white;
+    font-weight: bold;
+    background-color: rgb(80, 80, 212);
+    border: 0px;
+    border-radius: 5px ;
+    padding: 3px;
+    margin-top: 10px;
+}
+.career_right button:hover{
+    cursor: pointer;
+    background-color: rgb(68, 68, 180);
+}
+/* Paragraph  Under P tag*/
+.career_right .para{
+    
+    font-size: 16px;
+    line-height: 26px;
+    color: #475569;
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";;
+}
+
+
+
+            /*         --------------Interview CSS Starts Here-------------- */
+
+
+/* Intervew Parent */
+
+.interview{
+    width: 100%;
+    height: 700px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #ffffff;
+}
+
+/* Child Divs Grids */
+
+.interview_left{
+    padding-top: 90px;
+    padding-left: 200px;
+    padding-right: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+.interview_right{
+    text-align: start;
+}
+
+/* first P tag  */
+
+.interview_left .txt{
+
+    color: #4F46E5;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+/* H2 tag */
+.interview_left h2{
+    color: #0f172a;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 40px;
+
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+}
+
+/* Span in h2 */
+.first_impression{
+
+    color: #4F46E5;
+}
+
+/* Create Resume Button */
+.interview_left button{
+
+    width: 180px;
+    height: 50px;
+    font-size: large;
+    color: white;
+    font-weight: bold;
+    background-color: rgb(80, 80, 212);
+    border: 0px;
+    border-radius: 5px ;
+    padding: 3px;
+    margin-top: 10px;
+}
+.interview_left button:hover{
+    cursor: pointer;
+    background-color: rgb(68, 68, 180);
+}
+/* Paragraph  Under P tag*/
+.interview_left .para{
+    
+    font-size: 15px;
+    line-height: 26px;
+    color: #475569;
+    font-family: ui-sans-serif, system-ui, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+
+
+            /*         --------------FAQ's CSS Starts Here-------------- */
+
+/* FAQ main div CSS */
+
+.faq_main{
+
+    width: 100%;
+    height: 450px;
+    background-color: #F8FAFC;
+      
+}
+/* FAQ Child for Grid */
+.faq_content{
+    display: grid;
+    grid-template-columns: 1fr 2fr;  
+}
+/* FAQ Grid left */
+.faq_left{
+    margin-top: 20px;
+    margin-left: 130px;
+    font-size: 16px;
+    line-height: 60px;
+    font-weight: 500;
+    color: #475569;
+    font-family: ui-sans-serif, system-ui, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+}
+/* FAQ Grid right */
+.faq_right{
+    margin-top: 20px;
+    margin-right: 130px;
+    font-size: 16px;
+    line-height: 60px;
+    color: #475569;
+    font-family: ui-sans-serif, system-ui, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+/* P & H2 tag in FAQ  */
+.faq_right p{
+    margin-left: 100px;
+}
+.faq_main h2{
+    padding-top: 60px;
+    margin-left: 130px;
+    font-size: 28px;
+    line-height: 60px;
+    font-family: ui-sans-serif, system-ui, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+
+            /*         --------------DiveIn CSS Starts Here-------------- */
+
+
+
+/* Dive In Main Div CSS */
+.dive_in{
+
+    width: 100%;
+    height: 220px;
+    display: grid;    
+    grid-template-columns: 1fr 1fr;
+}
+
+/* Left & Right Divs  */
+/* .dive_left{
+
+    background-color: tomato;
+}
+.dive_right{
+
+    background-color: springgreen
+} */
+
+/* Create Resume Button */
+
+.dive_right button{
+
+    width: 180px;
+    height: 45px;
+    font-size: large;
+    color: white;
+    background-color: rgb(80, 80, 212);
+    border: 0px;
+    border-radius: 5px ;
+    padding: 3px;
+    margin-top: 90px;
+    margin-left: 350px;
+}
+.dive_right button:hover{
+    cursor: pointer;
+    background-color: rgb(68, 68, 180);
+}
+/* H2 Tags in Dive Left Grid */
+
+.dive_left h2{
+
+    margin-left: 120px;
+    font-size: 32px;
+    line-height: 35px;
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+.dive_1h2{
+    
+    color: #0f172a;
+    margin-top: 90px;
+
+}
+.dive_2h2{
+    color: #4F46E5;
+
+
+}
+
+
+
+
+
+            /*         --------------Footer CSS Starts Here-------------- */
+
+
+
+footer{
+    width: 100%;
+    height: 350px;
+    background-color: #334155;
+    font-family: sans-serif;
+
+}
+footer a{
+    text-decoration: none;
+    color: rgb(206, 199, 199);
+}
+footer ul li{
+    list-style: none;
+    line-height: 35px;
+    font-size: 14px;
+}
+footer h2{
+    color: rgb(206, 199, 199);
+    font-size: 16px;
+
+}
+.footer_child{
+    width: 80%;
+    height: auto;
+    margin: auto;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid white;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+
+}
+
+
+        /*  Ending logo & Copyright */
+
+
+
+.footer_end{
+    width: 80%;
+    margin-left: 150px;
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.footer_end p{
+    color: rgb(206, 199, 199);
+    text-align: end;
+    font-size: 12px;
+}
+
+.footer_end i{
+
+    margin: 10px;
+    opacity: 60%;
+}
+.footer_end i:hover{
+
+    opacity: 100%;
+
+
+}
