@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width>, initial-scale=1.0" />
+    <title>Billing (Discount Calculation)</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="script.js"/>
+ </head>
+
+<body>
+    <div id="maindiv">
+        <div id="div1">
+
+            <h2> The Waffers Store</h2>
+            <img src="cart.png" alt="cartpic" width="150px" height="100px">
+            <p><b> Email:</b> m.muzammil8691@gmail.com</p> 
+            <p><b> Contact:</b> +92 318 XXXXXXX </p>      
+            <p><b>Location:</b> Hazara University Mansehra</p> 
+        </div>
+
+        <hr>
+
+        <div id="div2">
+
+
+            <h3>Your Bill Details</h3>
+
+
+            <br />
+
+            <label id="label1">
+                Enter Total Amount here :
+                <input type="text" id="amount" placeholder="Enter Amount in  Numbers" />
+            </label>
+
+            <br />
+            <br />
+
+            <label id="label2">
+                Your Discount is :
+                <input disabled type="text" id="damount" />
+            </label>
+
+            <br />
+            <br />
+
+            <label id="label3">
+                Your Net Amount is :
+                <input disabled type="text" id="namount" />
+            </label>
+
+            <br />
+            <br />
+
+            <button onclick="calculate()">Calculate</button>
+        </div>
+
+        <div>
+
+            <h5>Thank You for Shopping at "The Waffers Store" </h5>
+            <h5>Please Come Back Soon</h5>
+        </div>
+    </div>
+
+
+    <script>
+        function calculate() {
+            var amount = parseInt(document.getElementById("amount").value);
+
+            var y = 5000;
+
+            if (amount >= y) {
+                var damount = (amount / 100) * 10;
+
+                namount = amount - damount;
+
+                document.getElementById("damount").value = damount;
+                document.getElementById("namount").value = namount;
+            } else if (amount < y) {
+                var damount = (amount / 100) * 5;
+
+                namount = amount - damount;
+
+                document.getElementById("damount").value = damount;
+                document.getElementById("namount").value = namount;
+            }
+        }
+        
+    </script>
+  
+</body>
+
+</html>
