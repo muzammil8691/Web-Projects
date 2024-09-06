@@ -1,0 +1,304 @@
+
+
+/* .parent{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+} */
+body{
+    padding: 0%;
+    margin: 0%;
+    background-color: thistle;
+
+}
+.parent{
+    width: 100%;
+    height: 1000px;
+    margin: auto;
+    /* margin-top: 50px; */
+
+}
+
+.landing{
+
+    max-width: 290px;
+    min-height: 520px;
+    background-color: darkslategrey;
+    border-radius: 10px;
+    margin: auto;
+
+    box-shadow: 0px 0px 10px 5px black;
+}
+
+header{
+
+    width: 100%;
+    height: 25px;
+    background-color: black;
+    color: aliceblue;
+    text-align: center;
+    position: sticky;
+}
+.banner{
+    background-image: url(banner.avif);
+    background-position: center;
+    background-size: cover;
+    max-width: 100%;
+    height: 120px;
+    background-color: blue;
+    margin-top: 10px;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+
+}
+.languages{
+    max-width: 100%;
+    height: 350px;
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+    gap: 10px;
+    padding: 10px;
+    overflow: scroll;
+
+}
+.languages::-webkit-scrollbar{
+
+    display: none;
+}
+
+.languages>div{
+
+    background-color: brown;
+    border-radius: 10px;
+    max-width: 100%;
+    max-height: 100px;
+    padding: 10px;
+    box-sizing:border-box;
+    line-height: 2px;
+    box-shadow: 0px 0px 5px 1px black;
+}
+.languages>div:hover{
+
+    cursor: pointer;
+}
+
+.languages>div>h2{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.landing>.languages>div>h4,p{
+    color: rgba(245, 245, 245, 0.445);
+}
+
+
+
+
+
+
+/* Page 2 */
+
+
+
+.second{
+    display: none;
+    max-width: 290px;
+    min-height: 520px;
+    background-color: darkslategrey;
+    border-radius: 10px;
+    overflow: scroll;
+    margin: auto;
+
+
+}
+.second::-webkit-scrollbar{
+
+    display: none;
+}
+.head{
+    margin-top: 10px;
+    display: flex;
+    gap: 40px;
+
+}
+.introduction{
+    max-width: 100%;
+    height: auto;
+    background-color: gray;
+    padding: 5px 10px;
+    margin: 10px 10px;
+    border-radius: 6px;
+
+}
+.introduction>p{
+    color: black;
+}
+
+.second>.btn{
+
+    margin: auto;
+    margin-top: 10px;
+
+}
+.btn>button{
+    width: 120px;
+    height: 25px;
+    background-color:rgb(218, 181, 218);
+    border: 0px;
+    border-radius: 10px;
+    font-size: small;
+    font-weight: 600;
+}
+
+
+#start:hover{
+    cursor: pointer;
+}
+.hamburger:hover{
+
+    cursor: pointer;
+}
+.fa-house:hover{
+
+    cursor: pointer;
+}
+
+.fa-xmark:hover{
+    cursor: pointer;
+
+}
+
+/*SideBar */
+
+.sidebar{
+    display: none;
+    position: fixed;
+    max-width:120px;
+    min-height: 420px;
+    top: 65px;
+    background-color: darkslategray;
+
+    overflow: hidden;
+    text-align: center;
+    transition: all ease 1s;
+}
+
+ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0px;
+    margin: 10px;
+}
+li {
+    list-style: none;
+    color: aliceblue;
+    line-height: 30px;
+    text-align: center;
+    
+}
+
+
+
+
+/* third */
+
+
+.third{
+    display: none;
+    max-width: 290px;
+    min-height: 520px;
+    background-color: darkslategrey;
+    border-radius: 10px;
+    overflow: scroll;
+    margin: auto;
+
+
+}
+.third::-webkit-scrollbar{
+
+    display: none;
+}
+.head{
+    height: 20px;
+    margin: auto;
+    margin-top: 10px;
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-around;
+
+}
+
+.btn{
+    /* margin: auto; */
+    margin-top: 10px;
+    width: 100px;
+    height: 15px;
+
+}
+.third>.btn>span>button{
+    width: 100px;
+    height: 25px;
+    background-color:rgb(218, 181, 218);
+    border: 0px;
+    border-radius: 10px;
+    font-size: smaller;
+    font-weight: 600;
+
+}
+
+
+
+/* Third */
+
+
+.lesson1{
+    max-width: 100%;
+    height: 380px;
+    background-color: gray;
+    padding: 5px 10px;
+    overflow: scroll;
+    margin: 10px 10px;
+    margin-top: 20px;
+
+    border-radius: 6px;
+
+}
+.lesson1::-webkit-scrollbar{
+
+    display: none;
+}
+.lesson1>h2{
+    text-align: center;
+    background-color:seagreen;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.lesson1>p,b{
+    color: black;
+}
+form>p{
+    text-align: center;
+}
+
+.third> .btn{
+
+    max-width: 100%;
+    height: 15px;
+    margin-top: 10px;
+    margin: 0%;
+    margin-left: 10px;
+    padding: 0%;
+    display: grid;
+    grid-template-columns:  1fr 1fr;
+    gap: 70px;
+    
+}
+.btn> .nex{
+
+    float: inline-start;
+}
+
+.btn> .pre{
+    float: inline-end;
+
+    
+}
