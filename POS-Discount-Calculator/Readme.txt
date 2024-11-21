@@ -25,4 +25,4 @@ Enter the total amount.
 The calculator will automatically determine the discount percentage and display the net amount to pay.
 
 
-LinkedIn Post: https://www.linkedin.com/posts/m-muzammil-23jun20_webdevelopment-javascript-firstproject-activity-7230856553443000320-yTxQ?utm_source=share&utm_medium=member_desktop
+LinkedIn Post: https://www.linkedin.com/posts/m-muzammil8691_webdevelopment-javascript-firstproject-activity-7230856553443000320-bLCw?utm_source=share&utm_medium=member_desktop
