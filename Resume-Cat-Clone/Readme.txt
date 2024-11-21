@@ -22,6 +22,4 @@ Significance:
 This project was a pivotal learning experience, as it not only deepened my understanding of CSS but also introduced me to the powerful FontAwesome library.
 
 
-LinkedIn Post Link:
-
-https://www.linkedin.com/posts/m-muzammil-23jun20_webdevelopment-css-javascript-activity-7227995832984190977-KMcd?utm_source=share&utm_medium=member_desktop
+LinkedIn Post Link: https://www.linkedin.com/posts/m-muzammil8691_webdevelopment-css-javascript-activity-7227996075695964160-ABEe?utm_source=share&utm_medium=member_desktop
