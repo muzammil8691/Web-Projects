@@ -20,3 +20,6 @@ JavaScript: For implementing the core logic, including:
 Dynamically moving data from the input form to the resume preview.
 
 Adding additional data tiles (e.g., work experiences, skills) as needed.
+
+
+LinkedIn Post: https://www.linkedin.com/posts/m-muzammil8691_webdevelopment-javascript-html-activity-7232770170199412737-2J62?utm_source=share&utm_medium=member_desktop
